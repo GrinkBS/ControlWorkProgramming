@@ -38,12 +38,11 @@ void PrintArray(string[] array)
 {
     if (array.Length == 0)
     {
-        Console.WriteLine("Пустой массив");
+        Console.Write("[ ]");
     }
     else
     {
-        Array.ForEach(array, (str) => Console.Write($"{str} "));
-        Console.WriteLine();
+        Array.ForEach(array, (str) => Console.Write($"[{str}] "));
     }
 }
 
@@ -51,7 +50,7 @@ void PrintResult(string[] array)
 {
     PrintArray(array);
     string[] shortArray = GetShort(array);
-    Console.WriteLine($"->");
+    Console.Write($"->");
     PrintArray(shortArray);
     Console.WriteLine();
 }
