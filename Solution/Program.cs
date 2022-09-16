@@ -34,3 +34,15 @@ string[] GetShort (string[] array)
 			return result;
 		}
 		
+void PrintArray(string[] array)
+		{
+			if(array.Length == 0)
+			{
+				Console.WriteLine("Пустой массив");
+			}
+			else
+			{
+				Array.ForEach(array, (str) => Console.Write($"{str} "));
+				Console.WriteLine();
+			}
+		}
